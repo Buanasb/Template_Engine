@@ -1,0 +1,124 @@
+{% extends 'website/index.html' %}
+
+<!-- ----navbar---- -->
+
+{% block logo_navbar %}
+
+{% for logo_navbar in logo_navbars %}
+{% include 'website/navbar/logo_navbar.html' with logo_navbar=logo_navbar %}
+{% endfor %}
+
+{% endblock logo_navbar %}
+
+
+{% block btn_navbar %}
+
+{% for btn_navbar in btn_navbars %}
+{% include 'website/navbar/btn_navbar.html' with btn_navbar=btn_navbar %}
+{% endfor %}
+
+{% endblock btn_navbar %}
+
+<!-- ----content---- -->
+
+{% block desc_content %}
+
+{% for desc_content in desc_contents %}
+{% include 'website/content/desc_content.html' with desc_content=desc_content %}
+{% endfor %}
+
+{% endblock desc_content %}
+
+
+{% block btn_content %}
+
+{% for btn_content in btn_contents %}
+{% include 'website/content/btn_content.html' with btn_content=btn_content %}
+{% endfor %}
+
+{% endblock btn_content %}
+
+<!-- ----offer---- -->
+
+{% block desc_offer %}
+
+{% for desc_offer in desc_offers %}
+{% include 'website/offer/desc_offer.html' with desc_offer=desc_offer %}
+{% endfor %}
+
+{% endblock desc_offer %}
+
+
+{% block content_offer %}
+
+{% for content_offer in content_offers %}
+{% include 'website/offer/content_offer.html' with content_offer=content_offer %}
+{% endfor %}
+
+{% endblock content_offer %}
+
+<!-- ----mountain---- -->
+
+{% block desc_mountain %}
+
+{% for desc_mountain in desc_mountains %}
+{% include 'website/mountain/desc_mountain.html' with desc_mountain=desc_mountain %}
+{% endfor %}
+
+{% endblock desc_mountain %}
+
+
+{% block content_mountain %}
+
+{% for content_mountain in content_mountains %}
+{% include 'website/mountain/content_mountain.html' with content_mountain=content_mountain %}
+{% endfor %}
+
+{% endblock content_mountain %}
+
+<!-- ----tool---- -->
+
+{% block desc_tool %}
+
+{% for desc_tool in desc_tools %}
+{% include 'website/tool/desc_tool.html' with desc_tool=desc_tool %}
+{% endfor %}
+
+{% endblock desc_tool %}
+
+
+{% block content_tool %}
+
+{% for content_tool in content_tools %}
+{% include 'website/tool/content_tool.html' with content_tool=content_tool %}
+{% endfor %}
+
+{% endblock content_tool %}
+
+<!-- ----cta---- -->
+
+{% block title_cta %}
+
+{% for title_cta in title_ctas %}
+{% include 'website/cta/title_cta.html' with title_cta=title_cta %}
+{% endfor %}
+
+{% endblock title_cta %}
+
+
+{% block btn_cta %}
+
+{% for btn_cta in btn_ctas %}
+{% include 'website/cta/btn_cta.html' with btn_cta=btn_cta %}
+{% endfor %}
+
+{% endblock btn_cta %}
+
+<!-- ----footer---- -->
+{% block content_footer %}
+
+{% for content_footer in content_footers %}
+{% include 'website/footer/content_footer.html' with content_footer=content_footer %}
+{% endfor %}
+
+{% endblock content_footer %}

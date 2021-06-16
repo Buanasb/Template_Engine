@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <title>Hike & Tools</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style_index.css' %}">
+</head>
+
+<body>
+    <div class="banner">
+        <nav>
+            <div>
+                {% block logo_navbar %}
+
+                {% endblock logo_navbar %}
+            </div>
+            <div class="navbar">
+                <div>
+                    <ul>
+                        {% block btn_navbar %}
+
+                        {% endblock btn_navbar %}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="content">
+            <div>
+                {% block desc_content %}
+
+                {% endblock desc_content %}
+            </div>
+            <div>
+                {% block btn_content %}
+
+                {% endblock btn_content %}
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ------ Offer ------- -->
+
+    <section class="offer">
+        <div>
+            {% block desc_offer %}
+
+            {% endblock desc_offer %}
+        </div>
+
+        <div class="row">
+            {% block content_offer %}
+
+            {% endblock content_offer %}
+        </div>
+    </section>
+
+    <!-- ------ Mountain ------- -->
+
+    <section class="mountain">
+        <div>
+            {% block desc_mountain %}
+
+            {% endblock desc_mountain %}
+        </div>
+
+        <div class="row">
+            {% block content_mountain %}
+
+            {% endblock content_mountain %}
+        </div>
+    </section>
+
+    <!-- ------ Tools ------- -->
+
+    <section class="tools">
+        <div>
+            {% block desc_tool %}
+
+            {% endblock desc_tool %}
+        </div>
+        <div class="row">
+            {% block content_tool %}
+
+            {% endblock content_tool %}
+        </div>
+    </section>
+
+    <!-- ------ Call to action ------- -->
+
+    <section class="cta">
+        <div>
+            {% block title_cta %}
+
+            {% endblock title_cta %}
+        </div>
+        <div>
+            {% block btn_cta %}
+
+            {% endblock btn_cta %}
+        </div>
+    </section>
+
+    <!-- ------ Footer ------- -->
+
+    <section class="footer">
+        <div>
+            {% block content_footer %}
+
+            {% endblock content_footer %}
+        </div>
+    </section>
+</body>
+
+</html>

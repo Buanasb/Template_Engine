@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.75);
+    background-image:  url(assets/background-landing-page.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li::after{
+    content: '';
+     height: 3px;
+     width: 0;
+     background: #19baff;
+     position: absolute;
+     left: 0;
+     bottom: -10px;
+     transition: .5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+.content h1{
+    font-size: 70px;
+}
+
+.content h3{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: .5s;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+
+.offer{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.offer h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.offer p{
+    color: #777;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.offer-col{
+    flex-basis: 45%;
+    background-color: #ecfffd;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-left: 3%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transform: .5s;
+}
+
+
+.offer-col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #000;
+}
+
+.offer-col p{
+    color: #555;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.offer-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+/* ------Mountain------- */
+
+.mountain{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.mountain h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.mountain p{
+    color: #777;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.mountain-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.mountain-col img{
+    width: 100%;
+    display: block;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+.layer:hover {
+    background: rgba(0, 183, 255, 0.7);
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+}
+
+.layer:hover h3{
+    bottom: 45%;
+    opacity: 1;
+}
+
+/* ------Tools------- */
+
+.tools{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.tools h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.tools p{
+    color: #777;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.tools-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.tools-col img{
+    width: 100%;
+    display: block;
+}
+
+/* ------CTA------- */
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/cta-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+    font-size: 20px;
+}
+
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.button-cta{
+    width: 200px;
+    padding: 10px 50px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-weight: 100;
+    text-decoration: inherit;
+    transition: .5s;           
+}
+
+.button-cta:hover{
+    background-color: #009688;
+    color: #FFFFFF;
+}
+
+/* ------Footer------- */
+
+.footer{
+    text-align: center;
+    padding-top: 30px 0;
+}
+
+.footer h3{
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.footer p{
+    color: #777;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-size: px;
+}
